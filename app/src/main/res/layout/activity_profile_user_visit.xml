@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activity.ProfileUserVisitActivity">
+
+    <ImageView
+        android:id="@+id/iv_user_full"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_image">
+
+    </ImageView>
+
+
+    <hieusenpaj.com.whapp.customImageView.WaveView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/bg_wave"
+
+        ></hieusenpaj.com.whapp.customImageView.WaveView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="250dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/circle_im" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profile_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></RelativeLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_user_full"
+        android:layout_centerHorizontal="true"
+        android:text="User name"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="30dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_request"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/btn_send_message"
+                android:layout_centerHorizontal="true">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+
+                    android:src="@drawable/circle_request" />
+
+                <ImageView
+                    android:id="@+id/iv_request"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/add_friend">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="Add Friend"
+                android:layout_marginTop="70dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_message"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/circle_request" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/messenger">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="Message"
+                android:textSize="16dp"
+                android:layout_marginTop="70dp">
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_delice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@color/colorPrimary"
+        android:text="Cancel Friend Request"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:visibility="gone"></Button>
+
+</RelativeLayout>

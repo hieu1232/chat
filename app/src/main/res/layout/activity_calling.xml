@@ -1,0 +1,60 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv"
+        android:layout_above="@+id/ll"
+        android:textSize="25dp"
+        android:layout_marginBottom="80dp"
+        android:layout_centerHorizontal="true"
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calling"
+        android:layout_above="@+id/ll"
+        android:textSize="17dp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        >
+
+    </TextView>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_make_call"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/make_call"
+            android:visibility="gone"
+            android:layout_marginRight="80dp">
+        </ImageView>
+        <ImageView
+            android:id="@+id/iv_cancel_call"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cancel_call">
+
+        </ImageView>
+    </LinearLayout>
+</RelativeLayout>

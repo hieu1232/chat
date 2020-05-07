@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "4100021264",
+    "firebase_url": "https://chatmxh.firebaseio.com",
+    "project_id": "chatmxh",
+    "storage_bucket": "chatmxh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4100021264:android:8f44c545512876cbb67e95",
+        "android_client_info": {
+          "package_name": "hieusenpaj.com.whapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4100021264-i05g18dbasq9kn4s6l3g3kaecav5bcf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hieusenpaj.com.whapp",
+            "certificate_hash": "5a982ac42ec8466a07e2ae2e361d9a8afb6248f9"
+          }
+        },
+        {
+          "client_id": "4100021264-ogcvdnbbqjct2db30gtlhe4m4j7fkcnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOIrI07f5QD8V_hooH53dmaMv3VzI2sA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4100021264-ogcvdnbbqjct2db30gtlhe4m4j7fkcnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

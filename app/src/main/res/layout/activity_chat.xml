@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activity.ChatActivity">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="56dp"
+       android:background="@color/colorPrimary"
+       android:id="@+id/toolbar_chat">
+       <ImageView
+           android:id="@+id/iv_back"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:padding="5dp"
+           android:src="@drawable/arrow"
+           android:layout_marginLeft="10dp"
+           android:layout_centerVertical="true">
+
+       </ImageView>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginLeft="10dp"
+           android:layout_centerVertical="true"
+           android:layout_toRightOf="@+id/iv_profile">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tv_name"
+               android:text="user name"
+               android:textColor="#fff"
+               android:textStyle="bold"
+               android:textSize="18dp"
+               android:textAllCaps="false">
+
+           </TextView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tv_status"
+               android:text="user name"
+               android:textColor="#fff"
+               android:textSize="14dp"
+               android:textAllCaps="false">
+
+           </TextView>
+
+       </LinearLayout>
+       <ImageView
+           android:id="@+id/iv_call"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:padding="10dp"
+           android:layout_alignParentEnd="true"
+           android:src="@drawable/phone_call"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="15dp">
+
+       </ImageView>
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/iv_profile"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:src="@drawable/profile_image"
+           android:layout_centerVertical="true"
+           android:layout_toRightOf="@+id/iv_back"
+           android:layout_marginLeft="20dp"
+          />
+
+   </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_chat"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/rl">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_search"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/iv_send_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="7dp"
+            android:src="@drawable/photo">
+
+        </ImageView>
+
+
+        <EditText
+            android:id="@+id/ed_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/iv_send_photo"
+            android:layout_marginRight="50dp"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:hint="Message">
+
+        </EditText>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_send"
+            android:layout_marginRight="15dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile_image"
+                android:layout_width="40dp"
+                android:src="@drawable/circle_sent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/send_message">
+
+            </ImageView>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_container">
+
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigation" />
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:mbn_backgroundBottomColor="#ffffff"
+        app:mbn_circleColor="#ffffff"
+        app:mbn_countBackgroundColor="#ff6f00"
+        app:mbn_countTextColor="#ffffff"
+        app:mbn_defaultIconColor="#90a4ae"
+        app:mbn_rippleColor="#2f424242"
+        app:mbn_selectedIconColor="#3c415e"
+        app:mbn_shadowColor="#1f212121" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:src="@drawable/back">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/ed_search"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_back"
+                android:background="@android:color/transparent"
+                android:hint="Search"
+                android:imeOptions="actionNext"
+                android:textColor="#000">
+
+            </EditText>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"></androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
